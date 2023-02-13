@@ -1,0 +1,44 @@
+GET http://localhost:5001/api/contacts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7fSwiaWF0IjoxNjc0MDE2NDYyLCJleHAiOjE2NzQwMTY0ODd9.1CIk5imcNhM5X9wNxC1IMWhGTYBMDAZ8M1YFo3myYz4
+
+###
+POST http://localhost:5001/api/contacts/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidHVzaGFyYSIsImVtYWlsIjoidHVzaGFyYUBleGFtcGxlLmNvbSIsImlkIjoiNjNjNjc0OGI5MTVjZjE1ZmMyODA4Y2ZiIn0sImlhdCI6MTY3Mzk1MDY2NCwiZXhwIjoxNjczOTUwNjc5fQ.SC7uUzsSZZ9_6xImb9Fat0mbIfVQ6K3uF_q33zwlHTk
+
+{
+    "name": "anu",
+    "email": "anu@example.com",
+    "phone": 9595959595
+}
+
+###
+
+POST http://localhost:5001/api/users/login
+Content-Type: application/json
+
+{
+  "email": "tushara@example.com",
+  "password": "123456"
+}
+
+
+###
+POST http://localhost:5001/api/users/register
+Content-Type: application/json
+
+{
+    "username": "aat",
+    "password": "123456",
+    "email": "wwsstt@example.com"
+}
+
+###
+POST http://localhost:5001/api/users/token
+Content-Type: application/json
+
+{
+    "token":
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidHVzaGFyYSIsImVtYWlsIjoidHVzaGFyYUBleGFtcGxlLmNvbSIsImlkIjoiNjNjNjc0OGI5MTVjZjE1ZmMyODA4Y2ZiIn0sImlhdCI6MTY3NDAxNjQzMX0.3Vv0PdyM-nYs360gZ1SSz33YtXyo1itAnR6UfGZMOYc"
+}
+
